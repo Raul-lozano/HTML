@@ -1,0 +1,270 @@
+body {
+  background-color: #191c32;
+}
+
+
+ul {
+  color: aliceblue;
+  list-style-type: none;  
+} 
+ /* {
+  display: flex;
+  justify-content: space-between; */
+}
+
+.text-right {
+  text-align: end; 
+}
+.textcentrado {
+  text-align: center;
+}
+
+  li {
+  width: 200px;
+  display: inline;
+  
+} 
+a {
+  color: beige;
+  padding: 20px;
+}
+a:hover {
+  color: yellow;
+}
+
+.img{
+  margin: auto;
+  display: block;
+
+}
+.contenedor img{
+  margin: auto;
+  display: block;
+}
+pre{
+  color: beige
+  
+}
+h2 {
+  text-align:center;
+}
+h1{
+  background-color: #191c32;
+}
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@100 & display=swap');
+
+.body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.timeline
+{
+    position: relative;
+    margin: 50px auto;
+    padding: 40px 0;
+    width: 1000px;
+}
+.timeline:before
+{
+    content: ' ';
+position: absolute;
+left: 50%;
+width: 2px;
+height: 100%;
+background: #c5c5c5;
+}
+
+.timeline ul
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+.timeline ul li
+{
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.timeline ul li:nth-child(odd)
+{
+    float: left;
+    text-align: right;
+    clear: both;
+
+}
+.timeline ul li:nth-child(even)
+{
+    float: right;
+    text-align: left;
+    clear: both;
+
+
+}
+.contenedor
+{
+    padding-bottom: 20px;
+}
+.timeline ul li:nth-child(odd):before
+{
+    content:' ' ;
+    position: absolute;
+    top: 24px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: rgba(233,33,99, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+.timeline ul li:nth-child(even):before
+{
+    content:' ' ;
+    position: absolute;
+    top: 24px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: rgba(233,33,99, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+.timeline h3
+{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: rgba(233, 33, 99, 0.2);
+    
+}
+
+/* a
+{
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #191c32;
+
+} */
+
+/* .btn.container{
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.btn-item{
+
+} */
+
+button{
+position: relative; 
+display: inline-block;
+border: 2px solid var(--white);
+padding: 20px;
+color: white;
+font-weight: 700;
+text-decoration: none;
+background: var(--white);
+transition: color 0.5s, background 0.5s;
+margin-left: 30px;
+}
+
+button{
+border-radius: 20px; 
+}
+
+button:hover{
+color: var(--white);
+background-color: var(--white);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/*Cards*/
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #7a7a7a;
+}
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 210px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #7a7a7a;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #2fb4cc;
+	border: 1px solid #2fb4cc;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: #2fb4cc;
+	color: #fff;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+
+form{
+  color: #fff;
+}
